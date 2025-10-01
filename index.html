@@ -19,29 +19,37 @@
 
     <!-- Hero Section -->
     <section class="hero">
-        <h1>Delicious baked goods delivered to your door</h1>
-        <p>Fresh, homemade, and irresistible!</p>
-        <button onclick="orderNow()">Order Now</button>
+        <div class="hero-text">
+            <h1>Freshly Baked Goodness Delivered to Your Door</h1>
+            <p>Sweeten your day with our irresistible treats!</p>
+            <button onclick="orderNow()">Order Now</button>
+        </div>
+        <div class="hero-image">
+            <img src="https://images.unsplash.com/photo-1606755962773-071e4a7fbb72?auto=format&fit=crop&w=800&q=80" alt="Bakery Hero">
+        </div>
     </section>
 
     <!-- Featured Products -->
     <section id="products" class="products">
-        <h2>Our Favorites</h2>
+        <h2>Our Bestsellers</h2>
         <div class="product-grid">
-            <div class="product">
-                <img src="bakery img" alt="Chocolate Cake">
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1599785209707-c56f7f6e18f8?auto=format&fit=crop&w=500&q=80" alt="Chocolate Cake">
                 <h3>Chocolate Cake</h3>
-                <p>Rich and moist chocolate cake for every occasion.</p>
+                <p>Decadent chocolate delight for every celebration.</p>
+                <button>Add to Cart</button>
             </div>
-            <div class="product">
-                <img src="img_2" alt="Cupcakes">
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1606755962956-8c61c2df6c02?auto=format&fit=crop&w=500&q=80" alt="Cupcakes">
                 <h3>Cupcakes</h3>
-                <p>Delightful cupcakes in various flavors and colors.</p>
+                <p>Mini treats with colorful frosting and flavors.</p>
+                <button>Add to Cart</button>
             </div>
-            <div class="product">
-                <img src="https://via.placeholder.com/150" alt="Cookies">
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1617196033537-72e4efc1d7d8?auto=format&fit=crop&w=500&q=80" alt="Cookies">
                 <h3>Cookies</h3>
-                <p>Crunchy, soft, and perfect for snacking anytime.</p>
+                <p>Soft and crunchy cookies baked to perfection.</p>
+                <button>Add to Cart</button>
             </div>
         </div>
     </section>
@@ -49,20 +57,26 @@
     <!-- Testimonials -->
     <section id="testimonials" class="testimonials">
         <h2>What Our Customers Say</h2>
-        <div class="testimonial">
-            <p>"Absolutely loved the cupcakes! Will order again."</p>
-            <span>- Sarah M.</span>
-        </div>
-        <div class="testimonial">
-            <p>"The chocolate cake was heavenly and fresh."</p>
-            <span>- Raj P.</span>
+        <div class="testimonial-slider">
+            <div class="testimonial">
+                <p>"Absolutely loved the cupcakes! Fresh, colorful, and delicious!"</p>
+                <span>- Emily R.</span>
+            </div>
+            <div class="testimonial">
+                <p>"The chocolate cake was divine and moist. Highly recommended!"</p>
+                <span>- Raj P.</span>
+            </div>
+            <div class="testimonial">
+                <p>"Amazing cookies, perfect for gifting and snacking."</p>
+                <span>- Sarah M.</span>
+            </div>
         </div>
     </section>
 
     <!-- Newsletter Signup -->
     <section id="newsletter" class="newsletter">
-        <h2>Stay Updated</h2>
-        <p>Subscribe for latest offers and new recipes!</p>
+        <h2>Stay Updated with Our Treats!</h2>
+        <p>Subscribe for special offers and new arrivals.</p>
         <input type="email" id="email" placeholder="Enter your email">
         <button onclick="subscribeNewsletter()">Subscribe</button>
         <p id="subscribe-msg"></p>
